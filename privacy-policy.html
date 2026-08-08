@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +11,8 @@
     body {
       margin: 0;
       background:
-        radial-gradient(circle at top left, rgba(131, 58, 180, 0.24), transparent 34%),
-        radial-gradient(circle at bottom right, rgba(253, 29, 29, 0.18), transparent 28%),
+        radial-gradient(circle at top left, rgba(88, 101, 242, 0.24), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(255, 82, 180, 0.18), transparent 28%),
         #08090d;
       color: #ffffff;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
@@ -19,7 +20,7 @@
     }
 
     .container {
-      max-width: 820px;
+      max-width: 860px;
       margin: 0 auto;
       padding: 48px 20px;
     }
@@ -31,6 +32,18 @@
       padding: 34px;
       box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
       backdrop-filter: blur(12px);
+    }
+
+    .badge {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #5865f2, #8a35ff, #ff5bbd);
+      font-size: 12px;
+      font-weight: 800;
+      color: #ffffff;
+      text-decoration: none;
     }
 
     h1 {
@@ -46,7 +59,8 @@
       color: #ffffff;
     }
 
-    p, li {
+    p,
+    li {
       color: rgba(255, 255, 255, 0.78);
       font-size: 15px;
     }
@@ -55,15 +69,8 @@
       padding-left: 22px;
     }
 
-    .badge {
-      display: inline-block;
-      margin-bottom: 16px;
-      padding: 7px 11px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
-      font-size: 12px;
-      font-weight: 800;
-      color: #ffffff;
+    a {
+      color: #72a4f2;
     }
 
     .updated {
@@ -72,8 +79,11 @@
       font-size: 14px;
     }
 
-    a {
-      color: #72a4f2;
+    .highlight {
+      padding: 16px;
+      border-radius: 16px;
+      background: rgba(114, 164, 242, 0.1);
+      border: 1px solid rgba(114, 164, 242, 0.18);
     }
 
     .footer {
@@ -99,27 +109,32 @@
   <main class="container">
     <section class="card">
       <a
-  href="https://chromewebstore.google.com/detail/bkfgklplfiknaedhnhbmfahcipfgnhal?utm_source=item-share-cb"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="badge"
->
-  IG Reels Toolkit
-</a>
+        class="badge"
+        href="https://chromewebstore.google.com/detail/bkfgklplfiknaedhnhbmfahcipfgnhal?utm_source=item-share-cb"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        IG Reels Toolkit
+      </a>
 
       <h1>Privacy Policy</h1>
-      <p class="updated">Effective date: June 27, 2026</p>
+      <p class="updated">Effective date: August 8, 2026</p>
 
       <p>
-        IG Reels Toolkit is a Chrome extension designed to improve the Instagram desktop video and Reels viewing experience by adding features such as video duration, progress controls, playback speed controls, skip buttons, mute controls, keyboard shortcuts, and a draggable floating panel.
+        IG Reels Toolkit is a browser extension designed to improve the Instagram desktop video and Reels viewing experience. It adds features such as exact video duration, progress controls, playback speed controls, skip buttons, mute controls, keyboard shortcuts, a seekable progress bar, and a draggable floating panel.
+      </p>
+
+      <p class="highlight">
+        IG Reels Toolkit is privacy-friendly by design. It does not collect, sell, transmit, or share personal information. The extension works locally in your browser to improve video controls on Instagram.
       </p>
 
       <h2>Information We Collect</h2>
       <p>
-        IG Reels Toolkit does not collect, store, sell, or transmit personal information.
+        IG Reels Toolkit does not collect, store, sell, transmit, or share personal information.
       </p>
+
       <p>
-        The extension does not collect your Instagram login details, messages, comments, browsing history, profile information, or content from your account.
+        The extension does not collect your Instagram login details, passwords, messages, comments, browsing history, profile information, account information, or content from your Instagram account.
       </p>
 
       <h2>Information Used Locally</h2>
@@ -132,16 +147,17 @@
         <li>Current playback time</li>
         <li>Playback speed</li>
         <li>Mute status</li>
+        <li>Playback state, such as whether a video is playing or paused</li>
         <li>The current Instagram page URL when you use the copy link feature</li>
       </ul>
 
       <p>
-        This information is used only inside your browser to operate the extension’s visible features. It is not sent to any external server.
+        This information is used only inside your browser to operate the extension’s visible features. It is not sent to the developer, to an external server, or to any third party.
       </p>
 
       <h2>Settings Storage</h2>
       <p>
-        IG Reels Toolkit uses Chrome storage to remember your extension preferences, such as:
+        IG Reels Toolkit uses browser extension storage to remember your preferences, such as:
       </p>
 
       <ul>
@@ -155,26 +171,31 @@
       </ul>
 
       <p>
-        These settings are stored by Chrome so the extension can remember your preferences. They are not sold or shared by the developer.
+        These preferences are stored by your browser so the extension can remember your settings. They are not sold, shared, or transmitted by the developer.
       </p>
 
       <h2>Third-Party Services</h2>
       <p>
-        IG Reels Toolkit includes an optional Ko-fi support link. If you click the Ko-fi link, you will leave the extension and visit Ko-fi’s website. Ko-fi may process information according to its own privacy policy.
+        IG Reels Toolkit includes an optional Ko-fi support link. If you click the Ko-fi link, you will leave the extension or website and visit Ko-fi’s website. Ko-fi may process information according to its own privacy policy.
       </p>
 
       <p>
-        The extension does not send your Instagram data to Ko-fi.
+        IG Reels Toolkit does not send your Instagram data, video information, or extension settings to Ko-fi.
       </p>
 
       <h2>Data Sharing</h2>
       <p>
-        IG Reels Toolkit does not sell, rent, trade, or share user data with third parties.
+        IG Reels Toolkit does not sell, rent, trade, transfer, or share user data with third parties.
       </p>
 
       <h2>Analytics and Tracking</h2>
       <p>
-        IG Reels Toolkit does not use analytics, advertising trackers, cookies, or tracking pixels.
+        IG Reels Toolkit does not use analytics tools, advertising trackers, cookies, tracking pixels, or behavioral profiling.
+      </p>
+
+      <h2>Remote Code</h2>
+      <p>
+        IG Reels Toolkit does not use remote code. The extension’s functionality is included in the extension package submitted to the browser extension store.
       </p>
 
       <h2>Permissions</h2>
@@ -182,9 +203,18 @@
         IG Reels Toolkit requests only the permissions needed to provide its features on Instagram and save user preferences.
       </p>
 
-      <h2>Chrome Web Store Limited Use Disclosure</h2>
       <p>
-        The use of information received from Chrome APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.
+        The extension runs on Instagram pages so it can detect visible HTML5 video elements, read local playback information, and display user-facing controls on the page.
+      </p>
+
+      <h2>Browser Store Disclosures</h2>
+      <p>
+        IG Reels Toolkit is intended to comply with applicable browser extension store policies, including privacy and limited-use requirements for browser APIs. Information accessed through browser APIs is used only to provide the extension’s stated video control features.
+      </p>
+
+      <h2>Children’s Privacy</h2>
+      <p>
+        IG Reels Toolkit is not designed to collect information from anyone, including children. The extension does not knowingly collect personal information from children.
       </p>
 
       <h2>Changes to This Privacy Policy</h2>
@@ -199,13 +229,16 @@
 
       <p>
         <strong>Zen Dev</strong><br />
-        <a href="mailto:contact.countdowntodo+igreelstoolkit@gmail.com">contact.countdowntodo+igreelstoolkit@gmail.com</a>
+        <a href="mailto:contact.countdowntodo+igreelstoolkit@gmail.com">
+          contact.countdowntodo+igreelstoolkit@gmail.com
+        </a>
       </p>
 
       <p class="footer">
-        This privacy policy applies only to the IG Reels Toolkit Chrome extension.
+        This privacy policy applies to the IG Reels Toolkit browser extension, including versions distributed through supported browser extension stores.
       </p>
     </section>
   </main>
 </body>
 </html>
+```
